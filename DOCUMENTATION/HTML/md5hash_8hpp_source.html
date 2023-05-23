@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SERVER: Исходный файл E:/Projects/PGU/4 семестр/Курсач Сервер/Code/md5hash.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SERVER<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_23fdee2f6995db16c755697cdf620cf4.html">Code</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">md5hash.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="md5hash_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cryptopp/hex.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="md5hash_8hpp.html#a60054cd46e0dc2ed04249519a5291cda">   11</a></span><span class="preprocessor">#define CRYPTOPP_ENABLE_NAMESPACE_WEAK 1</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;cryptopp/md5.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classmd5h.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classmd5h.html">md5h</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classmd5h.html#a84752d2b1137f38dc9b2944399258fed">salt_generator</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classmd5h.html#aeeb838bd7f6ddffd068149a6e8bc71c9">md5h</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classmd5h.html#a4513fa387f7c42308f48a1f62f22c00d">   32</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="classmd5h.html#a4513fa387f7c42308f48a1f62f22c00d">salt</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classmd5h.html#a24de00d007aa02abb947196d1a0aaba8">hash</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> password);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="ttc" id="aclassmd5h_html"><div class="ttname"><a href="classmd5h.html">md5h</a></div><div class="ttdoc">Класс, обрабатывабщий HASH MD5.</div><div class="ttdef"><b>Definition</b> md5hash.hpp:19</div></div>
+<div class="ttc" id="aclassmd5h_html_a24de00d007aa02abb947196d1a0aaba8"><div class="ttname"><a href="classmd5h.html#a24de00d007aa02abb947196d1a0aaba8">md5h::hash</a></div><div class="ttdeci">string hash(const string password)</div><div class="ttdoc">Получение хеша от пароля</div><div class="ttdef"><b>Definition</b> md5hash.cpp:17</div></div>
+<div class="ttc" id="aclassmd5h_html_a4513fa387f7c42308f48a1f62f22c00d"><div class="ttname"><a href="classmd5h.html#a4513fa387f7c42308f48a1f62f22c00d">md5h::salt</a></div><div class="ttdeci">string salt</div><div class="ttdoc">Соль</div><div class="ttdef"><b>Definition</b> md5hash.hpp:32</div></div>
+<div class="ttc" id="aclassmd5h_html_a84752d2b1137f38dc9b2944399258fed"><div class="ttname"><a href="classmd5h.html#a84752d2b1137f38dc9b2944399258fed">md5h::salt_generator</a></div><div class="ttdeci">string salt_generator()</div><div class="ttdoc">Генератор соли</div><div class="ttdef"><b>Definition</b> md5hash.cpp:37</div></div>
+<div class="ttc" id="aclassmd5h_html_aeeb838bd7f6ddffd068149a6e8bc71c9"><div class="ttname"><a href="classmd5h.html#aeeb838bd7f6ddffd068149a6e8bc71c9">md5h::md5h</a></div><div class="ttdeci">md5h()</div><div class="ttdoc">конструктор класса</div><div class="ttdef"><b>Definition</b> md5hash.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
